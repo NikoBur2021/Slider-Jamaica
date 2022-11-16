@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+            padding: 10%;
+        }
+        .container{
+            width: 100%;
+        }
+        .pictures img{
+            width: 100%;
+            display: none;
+        }
+        .miniatures img{
+            width: 100%;
+            display: block;
+        }
+        .miniatures{
+            display: flex;
+            justify-content: space-between;
+            margin-top: .1rem;
+            gap: .1rem;
+            width: calc(25% - .1rem);
+        }
+        .current{
+            outline: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+<div class="container">
+<div class="pictures">
+    <img src="20220828_113302.jpg">
+    <img src="20220828_113953.jpg">
+    <img src="20220828_114855.jpg">
+    <img src="20220828_131814.jpg">
+</div>
+<div class="miniatures"></div>
+</div>
+<div class="number"></div>
+<button class="prev">Prev</button>
+<button class="next">Next</button>
+</div>
+<script src="index.js" type="module"></script>
+</body>
+</html>
